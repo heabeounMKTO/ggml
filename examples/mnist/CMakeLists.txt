@@ -12,6 +12,9 @@ set(TEST_TARGET mnist-eval)
 add_executable(${TEST_TARGET} mnist-eval.cpp)
 target_link_libraries(${TEST_TARGET} PRIVATE ggml common mnist-common)
 
+set(TEST_TARGET mnist-torch-eval)
+add_executable(${TEST_TARGET} mnist-torch.cpp)
+target_link_libraries(${TEST_TARGET} PRIVATE ggml common mnist-common)
 #
 # mnist-train
 

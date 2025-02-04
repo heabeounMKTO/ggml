@@ -45,7 +45,7 @@ if __name__ == '__main__':
     save_conv2d_layer(f, gguf_writer, "l11", 384, 256, 3)
     save_conv2d_layer(f, gguf_writer, "l12", 256, 255, 1, batch_normalize=False)
     f.close()
-    
+
     gguf_writer.write_header_to_file()
     gguf_writer.write_kv_data_to_file()
     gguf_writer.write_tensors_to_file()

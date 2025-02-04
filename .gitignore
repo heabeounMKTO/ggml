@@ -4,6 +4,7 @@ out/
 tmp/
 models/
 models-mnt
+venv/
 
 compile_commands.json
 CMakeSettings.json
